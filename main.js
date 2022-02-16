@@ -25,13 +25,14 @@ const deixarVerde =() =>{
 
 function deixarAutomatico() {
     if (idAutomatico == null) {
-        idAutomatico = setInterval( 500)
+        const automatico = ['verde','amarelo','vermelho']
+        idAutomatico = setInterval( 5000)
 
         automatico.textContent = 'Parar'
     } else {
         clearInterval(idAutomatico)
         idAutomatico = null
-        automatico.textContent = 'voltar'
+        automatico.textContent = 'Automático'
         
     }
 }
